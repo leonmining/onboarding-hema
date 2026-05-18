@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Welkom bij HEMA · Onboarding</title>
+  <meta name="description" content="Onboarding website voor nieuwe medewerkers van HEMA. Vind hier alles wat je nodig hebt voor je eerste weken." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23E60028'/%3E%3Ctext x='50' y='66' font-family='Arial Black, sans-serif' font-size='42' font-weight='900' text-anchor='middle' fill='white'%3EH%3C/text%3E%3C/svg%3E" />
+</head>
+<body>
+  <a class="skip-link" href="#hoofdinhoud">Direct naar inhoud</a>
+
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a href="#top" class="logo" aria-label="HEMA onboarding home">
+        <span class="logo-mark">HEMA</span>
+        <span class="logo-sub">onboarding</span>
+      </a>
+      <nav class="nav" aria-label="Hoofdnavigatie">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-list">
+          <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+          <span class="sr-only">Menu</span>
+        </button>
+        <ul id="nav-list" class="nav-list">
+          <li><a href="#welkom">Welkom</a></li>
+          <li><a href="#cultuur">Cultuur &amp; waarden</a></li>
+          <li><a href="#praktisch">Praktisch</a></li>
+          <li><a href="#klanten">Klantenservice</a></li>
+          <li><a href="#checklist">Checklist</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="hoofdinhoud">
+
+    <!-- HERO / WELKOM -->
+    <section class="hero" id="welkom">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <span class="eyebrow">Fijn dat je er bent</span>
+          <h1>Welkom bij <span class="accent">HEMA</span>, <span id="naam-veld">collega</span>!</h1>
+          <p class="lead">
+            We zijn ontzettend blij dat je ons team komt versterken. Bij HEMA maken we het dagelijks leven leuker
+            en makkelijker &mdash; voor onze klanten én voor elkaar. Op deze pagina vind je alles wat je nodig hebt
+            voor een vliegende start.
+          </p>
+
+          <form class="name-form" id="naam-form" aria-label="Maak deze pagina persoonlijk">
+            <label for="naam-input">Vul je voornaam in voor een persoonlijke begroeting:</label>
+            <div class="name-row">
+              <input type="text" id="naam-input" name="naam" placeholder="Bijv. Sanne" autocomplete="given-name" maxlength="40" />
+              <button type="submit" class="btn btn-primary">Begroet mij</button>
+            </div>
+          </form>
+
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="#praktisch">Aan de slag</a>
+            <a class="btn btn-ghost" href="#checklist">Mijn eerste week</a>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <div class="badge badge-1">🥐 Tompoucen op vrijdag</div>
+          <div class="badge badge-2">❤️ 96 jaar HEMA</div>
+          <div class="badge badge-3">🛍️ 750+ winkels</div>
+          <div class="hero-card">
+            <div class="hero-card-top">
+              <span class="dot dot-r"></span>
+              <span class="dot dot-w"></span>
+              <span class="dot dot-r"></span>
+            </div>
+            <div class="hero-card-body">
+              <p class="quote">&ldquo;Echt, gewoon, bijzonder.&rdquo;</p>
+              <p class="quote-sub">Dat zijn wij.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CULTUUR & WAARDEN -->
+    <section class="section section-light" id="cultuur">
+      <div class="container">
+        <header class="section-head">
+          <span class="eyebrow">Onze cultuur</span>
+          <h2>Dit is HEMA</h2>
+          <p>Bij HEMA werken we vanuit een paar duidelijke waarden. Ze zijn de rode draad in alles wat we doen.</p>
+        </header>
+
+        <div class="values-grid">
+          <article class="value-card">
+            <div class="value-icon">💛</div>
+            <h3>Echt</h3>
+            <p>We zijn eerlijk, open en doen wat we beloven. Geen poespas, gewoon doen wat goed voelt.</p>
+          </article>
+          <article class="value-card">
+            <div class="value-icon">🤝</div>
+            <h3>Samen</h3>
+            <p>Je staat er nooit alleen voor. We helpen elkaar, vieren successen en leren van fouten.</p>
+          </article>
+          <article class="value-card">
+            <div class="value-icon">✨</div>
+            <h3>Bijzonder</h3>
+            <p>Eigenwijs en creatief. Van de rookworst tot het ontwerp: HEMA maakt het bijzonder.</p>
+          </article>
+          <article class="value-card">
+            <div class="value-icon">🌱</div>
+            <h3>Vooruit</h3>
+            <p>We blijven nieuwsgierig en duurzaam bezig &mdash; met oog voor mens, dier en milieu.</p>
+          </article>
+        </div>
+
+        <div class="callout">
+          <div class="callout-icon">🎂</div>
+          <div>
+            <h3>Wist je dat?</h3>
+            <p>HEMA bestaat sinds 1926 en startte in Amsterdam. Inmiddels staan onze producten in meer dan 10 landen.
+              De bekendste? Natuurlijk de rookworst en de tompouce.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRAKTISCH -->
+    <section class="section section-red" id="praktisch">
+      <div class="container">
+        <header class="section-head section-head-light">
+          <span class="eyebrow eyebrow-light">Praktische info</span>
+          <h2>Goed om te weten</h2>
+          <p>Werktijden, pauzes en kleding &mdash; hier vind je in één oogopslag de spelregels.</p>
+        </header>
+
+        <div class="info-grid">
+          <article class="info-card">
+            <div class="info-head">
+              <span class="info-emoji">⏰</span>
+              <h3>Werktijden</h3>
+            </div>
+            <ul class="info-list">
+              <li>Je rooster ontvang je uiterlijk <strong>twee weken vooraf</strong> via de HEMA-app.</li>
+              <li>Meld je <strong>10 minuten voor aanvang</strong> bij je teamleider.</li>
+              <li>Ben je ziek? Bel vóór <strong>08:00 uur</strong> je winkel of teamleider.</li>
+              <li>Ruilen kan altijd in onderling overleg via de planning-app.</li>
+            </ul>
+          </article>
+
+          <article class="info-card">
+            <div class="info-head">
+              <span class="info-emoji">☕</span>
+              <h3>Pauzes</h3>
+            </div>
+            <ul class="info-list">
+              <li>Werk je meer dan <strong>5,5 uur</strong>? Dan heb je recht op <strong>30 minuten</strong> pauze.</li>
+              <li>Werk je meer dan <strong>8 uur</strong>? Dan krijg je <strong>45 minuten</strong> pauze.</li>
+              <li>Koffie, thee en water zijn altijd gratis in de personeelsruimte.</li>
+              <li>Je telefoon gebruik je alleen in de pauze &mdash; niet op de vloer.</li>
+            </ul>
+          </article>
+
+          <article class="info-card">
+            <div class="info-head">
+              <span class="info-emoji">👕</span>
+              <h3>Kledingvoorschriften</h3>
+            </div>
+            <ul class="info-list">
+              <li>Draag je <strong>HEMA-shirt</strong> of -schort, fris en gestreken.</li>
+              <li>Daaronder: nette, donkere broek of rok en gesloten schoenen.</li>
+              <li>Naamsticker zichtbaar op borsthoogte.</li>
+              <li>Lang haar in een staart, sieraden bescheiden, nagels kort en schoon.</li>
+            </ul>
+          </article>
+
+          <article class="info-card">
+            <div class="info-head">
+              <span class="info-emoji">💶</span>
+              <h3>Salaris &amp; verlof</h3>
+            </div>
+            <ul class="info-list">
+              <li>Salaris wordt <strong>rond de 25e</strong> van de maand uitbetaald.</li>
+              <li>Loonstroken vind je in <strong>MijnHEMA</strong>.</li>
+              <li>Verlof vraag je aan via de planning-app, minimaal <strong>2 weken</strong> vooraf.</li>
+              <li>Als HEMA-medewerker krijg je <strong>10% personeelskorting</strong>.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- KLANTENSERVICE -->
+    <section class="section section-light" id="klanten">
+      <div class="container">
+        <header class="section-head">
+          <span class="eyebrow">Klant in de spotlight</span>
+          <h2>Tips voor klantenservice</h2>
+          <p>De klant is bij HEMA koning &mdash; maar wel op zijn HEMA's: warm, eerlijk en met een knipoog.</p>
+        </header>
+
+        <div class="tips-grid">
+          <article class="tip">
+            <span class="tip-num">01</span>
+            <h3>Begroet iedereen</h3>
+            <p>Een glimlach en &ldquo;goedemorgen&rdquo; binnen 10 seconden. Mensen voelen zich direct welkom.</p>
+          </article>
+          <article class="tip">
+            <span class="tip-num">02</span>
+            <h3>Luister actief</h3>
+            <p>Laat de klant uitpraten, herhaal kort wat je hoort en stel een vraag. Zo weet je écht wat iemand zoekt.</p>
+          </article>
+          <article class="tip">
+            <span class="tip-num">03</span>
+            <h3>Help met kennis</h3>
+            <p>Ken je producten. Weet je iets niet? Eerlijk zeggen en samen op zoek &mdash; of een collega erbij halen.</p>
+          </article>
+          <article class="tip">
+            <span class="tip-num">04</span>
+            <h3>Blijf rustig</h3>
+            <p>Een boze klant? Adem, luister, neem het persoonlijk niet op. Bied een oplossing aan binnen je mogelijkheden.</p>
+          </article>
+          <article class="tip">
+            <span class="tip-num">05</span>
+            <h3>Verras positief</h3>
+            <p>Een complimentje, een extra tasje, een tip over de tompouce van vandaag &mdash; de kleine dingen maken het verschil.</p>
+          </article>
+          <article class="tip">
+            <span class="tip-num">06</span>
+            <h3>Sluit warm af</h3>
+            <p>Bedank de klant met naam (als die op de pas staat), wens een fijne dag en kijk de klant aan.</p>
+          </article>
+        </div>
+
+        <div class="scenario">
+          <h3>Wat doe je als&hellip;</h3>
+          <details>
+            <summary>&hellip; een klant een product wil ruilen zonder bon?</summary>
+            <p>Vriendelijk uitleggen dat we een bon nodig hebben voor terugbetaling. Heeft de klant betaald met pinpas?
+              Dan kan een collega vaak helpen met een digitale bon via de kassa. Twijfel je? Roep je teamleider erbij.</p>
+          </details>
+          <details>
+            <summary>&hellip; een kind zoek is in de winkel?</summary>
+            <p>Vraag rustig naam, leeftijd en kleding van het kind. Geef dit direct door aan je teamleider en blijf bij de ouder.
+              We zoeken samen en zetten zo nodig de zoek-procedure in werking.</p>
+          </details>
+          <details>
+            <summary>&hellip; je een vraag krijgt waarop je het antwoord niet weet?</summary>
+            <p>Wees eerlijk: &ldquo;Goede vraag, dat weet ik niet uit mijn hoofd. Eén momentje, ik vraag het even na.&rdquo;
+              Beter een eerlijk antwoord dan een verkeerd antwoord.</p>
+          </details>
+          <details>
+            <summary>&hellip; een klant boos is over een lange rij?</summary>
+            <p>Erken het ongemak (&ldquo;Ik snap dat het vervelend is&rdquo;), bedank voor het geduld en bel zo nodig een
+              extra collega op om bij te springen via de oproepbel.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- CHECKLIST EERSTE WEEK -->
+    <section class="section section-cream" id="checklist">
+      <div class="container">
+        <header class="section-head">
+          <span class="eyebrow">Eerste week</span>
+          <h2>Mijn checklist</h2>
+          <p>Vink af wat je al gedaan hebt. Je voortgang wordt automatisch onthouden op dit apparaat.</p>
+        </header>
+
+        <ul class="checklist" id="checklist-list">
+          <li><label><input type="checkbox" data-key="kennismaking" /> <span>Kennismaken met mijn team en teamleider</span></label></li>
+          <li><label><input type="checkbox" data-key="rondleiding" /> <span>Rondleiding door de winkel gehad</span></label></li>
+          <li><label><input type="checkbox" data-key="rooster" /> <span>HEMA-app geïnstalleerd en rooster ingezien</span></label></li>
+          <li><label><input type="checkbox" data-key="kassa" /> <span>Eerste kassa-training afgerond</span></label></li>
+          <li><label><input type="checkbox" data-key="kleding" /> <span>HEMA-shirt en naamsticker ontvangen</span></label></li>
+          <li><label><input type="checkbox" data-key="veiligheid" /> <span>Bedrijfshulpverlening en nooduitgangen bekeken</span></label></li>
+          <li><label><input type="checkbox" data-key="mijnhema" /> <span>Ingelogd op MijnHEMA voor mijn loonstroken</span></label></li>
+          <li><label><input type="checkbox" data-key="rookworst" /> <span>Een rookworst geproefd 😉</span></label></li>
+        </ul>
+
+        <div class="progress-wrap" aria-live="polite">
+          <div class="progress-bar"><div class="progress-fill" id="progress-fill"></div></div>
+          <p class="progress-label"><span id="progress-text">0 van 8</span> taken afgerond</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section section-light" id="contact">
+      <div class="container contact-grid">
+        <div>
+          <span class="eyebrow">Vragen?</span>
+          <h2>We helpen je graag verder</h2>
+          <p>Stel je vraag aan je teamleider, kijk op MijnHEMA of bel het servicebureau.
+            Geen vraag is te klein &mdash; iedereen is ooit nieuw geweest.</p>
+        </div>
+        <ul class="contact-list">
+          <li><span class="contact-emoji">👤</span><div><strong>Je teamleider</strong><br />Eerste aanspreekpunt op de werkvloer.</div></li>
+          <li><span class="contact-emoji">💻</span><div><strong>MijnHEMA</strong><br />Loonstroken, rooster en personeelsinfo.</div></li>
+          <li><span class="contact-emoji">📞</span><div><strong>Servicebureau</strong><br />Bereikbaar ma t/m vr van 09:00&ndash;17:00.</div></li>
+          <li><span class="contact-emoji">💬</span><div><strong>HR</strong><br />Voor vertrouwelijke vragen en verlof.</div></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="logo-mark logo-mark-sm">HEMA</span>
+        <p>Echt. Gewoon. Bijzonder. Sinds 1926.</p>
+      </div>
+      <p class="footer-meta">© <span id="jaar"></span> HEMA · Onboarding · Gemaakt met ❤️ voor nieuwe collega's</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

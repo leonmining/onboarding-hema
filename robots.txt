@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /out/
+
+Sitemap: https://wasmachinewijzer.nl/sitemap.xml

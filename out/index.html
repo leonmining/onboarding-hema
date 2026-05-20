@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8" />
+<title>Doorverwijzen…</title>
+<meta name="robots" content="noindex,nofollow" />
+<style>body{font-family:system-ui;display:grid;place-items:center;min-height:100vh;color:#0F172A}</style>
+</head>
+<body>
+<p>Een moment – we sturen je door naar Bol.com…</p>
+<script>
+  const params = new URLSearchParams(location.search);
+  const path = params.get('p') || 'l/wasmachines/';
+  const id = "BOLAFFID";
+  const sub = params.get('s') || 'site';
+  const sep = path.includes('?') ? '&' : '?';
+  location.replace('https://www.bol.com/nl/nl/' + path + sep + 'bltgh=' + encodeURIComponent(id) + '&affiliate_subid=' + encodeURIComponent(sub));
+</script>
+<noscript><a id="fallback" href="https://www.bol.com/nl/nl/l/wasmachines/?bltgh=BOLAFFID">Klik hier om door te gaan</a></noscript>
+</body>
+</html>

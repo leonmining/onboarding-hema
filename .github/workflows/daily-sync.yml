@@ -1,0 +1,67 @@
+name: Daily sync & build
+
+on:
+  schedule:
+    # Elke dag om 03:00 UTC (= 04:00 of 05:00 NL-tijd afhankelijk van zomertijd)
+    - cron: '0 3 * * *'
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Sync producten met Bol.com
+        env:
+          BOL_CLIENT_ID: ${{ secrets.BOL_CLIENT_ID }}
+          BOL_CLIENT_SECRET: ${{ secrets.BOL_CLIENT_SECRET }}
+          AFFILIATE_ID: ${{ secrets.AFFILIATE_ID }}
+        run: npm run sync
+
+      - name: Controleer URLs en beschikbaarheid
+        run: npm run verify
+
+      - name: Bouw de site opnieuw
+        env:
+          AFFILIATE_ID: ${{ secrets.AFFILIATE_ID }}
+        run: npm run build
+
+      - name: Commit veranderingen
+        run: |
+          git config user.name "wasmachine-bot"
+          git config user.email "bot@wasmachinewijzer.nl"
+          git add -A
+          if git diff --staged --quiet; then
+            echo "Geen wijzigingen."
+          else
+            git commit -m "chore(sync): dagelijkse update van producten en site"
+            git push
+          fi
+
+  deploy:
+    needs: sync
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/configure-pages@v4
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+      - id: deployment
+        uses: actions/deploy-pages@v4

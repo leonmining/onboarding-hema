@@ -1,0 +1,17 @@
+{
+  "name": "wasmachine-vergelijker",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Wasmachine vergelijksite met Bol.com partnerprogramma",
+  "scripts": {
+    "build": "node scripts/build.js",
+    "sync": "node scripts/sync-bol.js",
+    "verify": "node scripts/verify-products.js",
+    "daily": "npm run sync && npm run verify && npm run build",
+    "serve": "node scripts/serve.js"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

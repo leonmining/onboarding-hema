@@ -74,8 +74,9 @@
           "text": "Heel stil, ook 's avonds. App valt af en toe uit, maar handmatig start ook gewoon."
         }
       ],
-      "lastChecked": "2026-09-07T03:02:18.139Z",
-      "available": true
+      "lastChecked": "2026-09-08T03:02:18.816Z",
+      "available": false,
+      "unavailableSince": "2026-09-08T03:02:18.816Z"
     },
     {
       "id": "9300000098745612",
@@ -154,8 +155,9 @@
           "text": "Mis een stoomprogramma. Verder een fantastische machine."
         }
       ],
-      "lastChecked": "2026-09-07T03:02:18.139Z",
-      "available": true
+      "lastChecked": "2026-09-08T03:02:18.816Z",
+      "available": false,
+      "unavailableSince": "2026-09-08T03:02:18.816Z"
     },
     {
       "id": "9300000076543210",
@@ -229,8 +231,9 @@
           "text": "Veel programma's, in begin even uitzoeken. Daarna gewoonweg een topmachine."
         }
       ],
-      "lastChecked": "2026-09-07T03:02:18.139Z",
-      "available": true
+      "lastChecked": "2026-09-08T03:02:18.816Z",
+      "available": false,
+      "unavailableSince": "2026-09-08T03:02:18.816Z"
     },
     {
       "id": "9300000054321098",
@@ -303,8 +306,9 @@
           "text": "Heel veel functies, neem de tijd om alles te leren. Wasresultaat is top."
         }
       ],
-      "lastChecked": "2026-09-07T03:02:18.139Z",
-      "available": true
+      "lastChecked": "2026-09-08T03:02:18.816Z",
+      "available": false,
+      "unavailableSince": "2026-09-08T03:02:18.816Z"
     },
     {
       "id": "9300000043210987",
@@ -377,8 +381,9 @@
           "text": "Centrifugeren is hoorbaar maar verder geen klacht. Wast prima en doet 't gewoon."
         }
       ],
-      "lastChecked": "2026-09-07T03:02:18.139Z",
-      "available": true
+      "lastChecked": "2026-09-08T03:02:18.816Z",
+      "available": false,
+      "unavailableSince": "2026-09-08T03:02:18.816Z"
     },
     {
       "id": "9300000032109876",
@@ -452,9 +457,10 @@
           "text": "AddXtra-luikje is heerlijk handig. App is niets bijzonders, maar machine is top."
         }
       ],
-      "lastChecked": "2026-09-07T03:02:18.139Z",
-      "available": true
+      "lastChecked": "2026-09-08T03:02:18.816Z",
+      "available": false,
+      "unavailableSince": "2026-09-08T03:02:18.816Z"
     }
   ],
-  "lastVerified": "2026-09-07T03:02:18.139Z"
+  "lastVerified": "2026-09-08T03:02:18.816Z"
 }
